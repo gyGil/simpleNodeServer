@@ -23,7 +23,7 @@ app.use((req, res, next) => {
         }
     });
     next();
-});
+});  
 
 // Make stop on maintance page
 app.use((req, res, next) => {
