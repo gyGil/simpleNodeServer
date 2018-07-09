@@ -25,6 +25,8 @@ app.use((req, res, next) => {
     next();
 });  
 
+//asdfdfa
+
 // Make stop on maintance page
 app.use((req, res, next) => {
     res.render('maintenance.hbs');
