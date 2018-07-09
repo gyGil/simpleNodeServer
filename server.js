@@ -29,9 +29,9 @@ app.use((req, res, next) => {
 
 
 // Make stop on maintance page
-app.use((req, res, next) => {
-    res.render('maintenance.hbs');
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs');
+// });
 
 // it can be called as function in hbs file
 hbs.registerHelper('getCurrentYear', () => {
@@ -49,6 +49,12 @@ app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'About Page',
     });    
+});
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects'
+    });
 });
 
 // /bad - send back json with errorMessage
